@@ -6,7 +6,7 @@ This project mainly focuses on using syscalls for calling Nt-functions instead o
 
 Currently this project supports x64 only 
 
-To use the examples please refer implement the syscall number correctly according to your Windows distribution
+To use the examples please implement the syscall number correctly according to your Windows distribution
 
 
 #### References
