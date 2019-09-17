@@ -4,6 +4,8 @@ NtSuspend Process syscall test
 Author:  Souhardya Sardar
 #>
 
+$ProcessID = 1234 #ProcessId to suspend 
+
 function Get-DelegateType
 {
     Param
@@ -68,7 +70,7 @@ function Get-ProcAddress
 $openaddr = Get-ProcAddress kernel32.dll OpenProcess
 $openDelgate = Get-DelegateType @([UInt32], [Bool], [UInt32]) ([IntPtr])
 $openProc = [System.Runtime.InteropServices.Marshal]::GetDelegateForFunctionPointer($openaddr, $openDelgate)
-$proc = $openProc.Invoke(0x00000800, $false, 13828)  #change pid here 
+$proc = $openProc.Invoke(0x00000800, $false, $ProcessID)  #change pid here 
 
 
 $VirtualAllocAddr = Get-ProcAddress kernel32.dll VirtualAlloc
