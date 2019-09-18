@@ -26,7 +26,7 @@ NtCreateThreadEx -DllPath FullPathToDll -ProcessID 123
         [Byte[]]$dllBuf = [System.Text.Encoding]::Default.GetBytes($DllPath)
 
    
-        #Winver : Windows Version 1803
+        #Winver : Windows Version 1803 x64
         [Byte[]] $NtCreateThreadExStub = @(0x49, 0x89, 0xCA, 0xB8, 0xBB, 0x00, 0x00, 0x00, 0x0F, 0x05, 0xC3)
         #0:   49 89 ca                mov    %rcx,%r10
         #3:   b8 bb 00 00 00          mov    $0xbb,%eax
