@@ -10,6 +10,9 @@ To use the examples please implement the syscall number correctly according to y
 
 
 #### References
+
+https://guidedhacking.com/threads/using-syscalls-in-c.12164/
+
 https://undocumented.ntinternals.net/
 
 https://j00ru.vexillium.org/syscalls/nt/64/
