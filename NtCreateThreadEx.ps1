@@ -10,7 +10,7 @@ The dllname to be used.
 The process Id of the process 
 .EXAMPLE
 PS>Import-Module .\NtCreateThreadEx.ps1
-NtCreateThreadEx -DllPath MessageBox64.dll -ProcessID 123
+NtCreateThreadEx -DllPath FullPathToDll -ProcessID 123
 #>
 
         [CmdletBinding()] Param (
