@@ -6,9 +6,7 @@ Raw syscall implementations with Powershell
 
 This project mainly focuses on using syscalls for calling NT-functions instead of directly calling them 
 
-Currently this project supports x64 only 
-
-To use the examples please implement the syscall number correctly according to your Windows distribution
+To use the examples please implement the syscall number correctly according to your Windows distribution and also take note of the architecture 
 
 
 
