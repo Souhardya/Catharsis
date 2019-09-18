@@ -1,6 +1,13 @@
 # Catharsis (Work in progress)
 Raw syscall implementations with Powershell
 
+-> NtCreaThreadEx.ps1 dll injector 
+
+-> /SyscallTests/SyscallTests.ps1 is just an example using NtSuspendProcess 
+
+
+
+
 ### Brief 
 This project mainly focuses on using syscalls for calling Nt-functions instead of directly calling them 
 
