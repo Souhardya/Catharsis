@@ -120,7 +120,7 @@ NtCreateThreadEx -DllPath FullPathToDll -ProcessID 123
         $WriteProcessMemoryAddr = Get-ProcAddress kernel32.dll WriteProcessMemory
         $WriteProcessMemoryDelegate = Get-DelegateType @([IntPtr], [IntPtr], [Byte[]], [UInt32], [IntPtr]) ([Bool])
         $WriteProcessMemory = [System.Runtime.InteropServices.Marshal]::GetDelegateForFunctionPointer($WriteProcessMemoryAddr, $WriteProcessMemoryDelegate)
-        if(!$WriteProcessMemory.Invoke($prochandle, $remotememoryaddress, $dllBuf , [Uint32]$DllPath.Length , [IntPtr]::Zero))
+        if(!$WriteProcessMemory.Invoke($prochandle, $remotememoryaddress, $dllBuf , [Uint32]$DllPath.Length+1 , [IntPtr]::Zero))
         {
             Throw "[!] Cannot write in remote process: $ProcessID"
         }
