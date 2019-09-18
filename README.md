@@ -16,9 +16,8 @@ Currently this project supports x64 only
 To use the examples please implement the syscall number correctly according to your Windows distribution
 
 
-## Demo 
 
-![](SyscallTest/dllinj.gif)
+![Dll Injector Demo](SyscallTest/dllinj.gif)
 
 
 #### References
